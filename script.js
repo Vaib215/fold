@@ -384,7 +384,7 @@ async function processFile(file) {
     );
 
     // Add branding to the second sheet
-    addBranding(doc, docWidth, docHeight);
+    // addBranding(doc, docWidth, docHeight);
 
     // Convert to blob
     const pdfBlob = doc.output("blob");
