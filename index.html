@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Booklet Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PDF Booklet Maker</h1>
+      <p class="description">
+        Upload PDF files and convert them into booklet format for double-sided
+        printing.
+      </p>
+
+      <div class="upload-section">
+        <div class="upload-area" id="dropArea">
+          <img src="upload-icon.svg" alt="Upload" id="uploadIcon" />
+          <p>Drag & drop your PDF files here or</p>
+          <label for="fileInput" class="upload-btn">Choose Files</label>
+          <input
+            type="file"
+            id="fileInput"
+            accept="application/pdf"
+            multiple
+            hidden
+          />
+        </div>
+      </div>
+
+      <div id="fileList" class="file-list"></div>
+
+      <div class="bulk-actions" id="bulkActions" style="display: none">
+        <button id="processAllBtn" class="primary-btn">
+          Process All Files
+        </button>
+        <button id="clearAllBtn" class="secondary-btn">Clear All Files</button>
+      </div>
+
+      <div class="preview-section" id="previewSection" style="display: none">
+        <h2>Preview</h2>
+        <div class="preview-container">
+          <div class="preview-page">
+            <div class="page-label">First Side</div>
+            <div class="page-layout">
+              <div class="page" id="page4">Page 4</div>
+              <div class="page" id="page1">Page 1</div>
+            </div>
+          </div>
+          <div class="preview-page">
+            <div class="page-label">Second Side</div>
+            <div class="page-layout">
+              <div class="page" id="page2">Page 2</div>
+              <div class="page" id="page3">Page 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="generateBtn" class="primary-btn">
+            Generate Booklet PDF
+          </button>
+          <button id="resetBtn" class="secondary-btn">
+            Upload Another PDF
+          </button>
+        </div>
+      </div>
+
+      <div id="processedFiles" class="processed-files" style="display: none">
+        <h2>Processed Files</h2>
+        <div id="processedFilesList" class="processed-files-list"></div>
+        <div class="buttons">
+          <button id="downloadAllBtn" class="primary-btn">
+            Download All as ZIP
+          </button>
+        </div>
+      </div>
+
+      <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <p id="loadingText">Processing your PDF...</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>PDF Booklet Maker | Created with PDF.js and jsPDF</p>
+      <p class="creator">
+        Developed by
+        <a
+          href="https://linkedin.com/in/vaib215"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Vaibhav Kumar Singh <i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a
+          href="https://github.com/vaib215"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://x.com/thisis_vaib"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-x"></i> Twitter</a
+        >
+      </p>
+    </footer>
+
+    <!-- PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <!-- jsPDF library for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- JSZip library for ZIP file creation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
