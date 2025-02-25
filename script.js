@@ -403,7 +403,7 @@ async function processFile(file) {
 
 //   // Add branding text at the bottom of the page
 //   const brandingText =
-//     "Created with PDF Booklet Maker by Vaibhav Kumar Singh (linkedin.com/in/vaib215)";
+//     "Created with 2Fold by Vaibhav Kumar Singh (linkedin.com/in/vaib215)";
 //   const textWidth =
 //     (doc.getStringUnitWidth(brandingText) * 8) / doc.internal.scaleFactor;
 

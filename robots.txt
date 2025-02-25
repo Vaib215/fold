@@ -1,0 +1,7 @@
+# robots.txt for 2Fold
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://2fold.vaib.live/sitemap.xml 

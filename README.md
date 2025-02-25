@@ -10,6 +10,7 @@ A web-based tool that allows you to convert PDF files into booklet format for do
 - Download individual booklet PDFs or all processed PDFs as a ZIP file
 - Separator lines between pages for easier folding
 - Responsive design that works on desktop and mobile devices
+- SEO optimized with Open Graph metadata for better social sharing
 
 ## How It Works
 
@@ -26,6 +27,17 @@ The tool rearranges the pages of your PDF in the following way:
 - Right: Page 3
 
 When printed double-sided (flip on short edge) and folded in the middle, the pages will appear in the correct order: 1, 2, 3, 4.
+
+## SEO & Social Sharing
+
+The tool is optimized for search engines and social media sharing with:
+
+- Comprehensive meta tags for better search engine visibility
+- Open Graph metadata for rich previews when shared on Facebook, LinkedIn, etc.
+- Twitter Card metadata for enhanced Twitter sharing
+- JSON-LD structured data for better understanding by search engines
+- Favicon and Apple Touch Icon for better branding
+- robots.txt and sitemap.xml for improved search engine crawling
 
 ## How to Use
 
